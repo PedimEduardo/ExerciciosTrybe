@@ -88,6 +88,12 @@
         let elementoLista = document.createElement("li");
         corpo.children[2].children[2].children[0].appendChild(elementoLista).innerHTML = array[index];
       }
+      array1 = ["AAA", "BBB", "CCC"];
+      for (let index in array1) {
+        let filhoH3 = document.createElement("h3")
+        corpo.children[2].appendChild(filhoH3).innerHTML = array1[index];
+        }
+      
     </script>
   </body>
 </html>
