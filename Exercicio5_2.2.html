@@ -91,8 +91,16 @@
       array1 = ["AAA", "BBB", "CCC"];
       for (let index in array1) {
         let filhoH3 = document.createElement("h3")
+        filhoH3.className = "description";
         corpo.children[2].appendChild(filhoH3).innerHTML = array1[index];
         }
+      corpo.children[1].className = "title";
+      corpo.children[2].removeChild(corpo.children[2].children[1]);
+      corpo.children[2].children[1].style.marginRight = "auto";
+      corpo.children[2].style.backgroundColor = "green";
+      let removerElemento = document.querySelector("ul")
+      removerElemento.removeChild(removerElemento.children[9]);
+      removerElemento.removeChild(removerElemento.children[8]);
     </script>
   </body>
 </html>
