@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário Responsivo</title>
+  <link rel="stylesheet" href="CSS/bulma.min.css">
+</head>
+
+<body>
+
+  <!--CABEÇALHO-->
+  <header class="section">
+    <h1 class="title has-text-centered">Dados Pessoais:</h1>
+  </header>
+
+  <!--FORMULÁRIO-->
+  <form action="" method="GET">
+
+    <!--NOME-->
+    <div class="field">
+      <label class="label" for="input-name">Nome:</label>
+      <div class="control">
+        <input type="text" required="required" maxlength="40" placeholder="Digite seu Nome" id="input-name">
+      </div>
+    </div>
+
+    <!--EMAIL-->
+    <div class="field">
+      <label class="label" for="input-email">E-mail:</label>
+      <div class="control">
+        <input type="text" required="required" maxlength="50" placeholder="email@email.com" id="input-email">
+      </div>
+    </div>
+
+    <!--CPF-->
+    <div class="field">
+      <label class="label" for="input-cpf">CPF:</label>
+      <div class="control">
+        <input type="text" required="required" maxlength="11" placeholder="Digite Seu CPF" id="input-cpf">
+      </div>
+    </div>
+
+    <!--ENDEREÇO-->
+    <div class="field">
+      <label class="label" for="input-endereco">Endereço:</label>
+      <div class="control">
+        <input type="text" required="required" maxlength="200" placeholder="Digite Seu Endereço" id="input-endereco">
+      </div>
+    </div>
+
+    <!--CIDADE-->
+    <div class="field">
+      <label class="label" for="input-casa">Cidade:</label>
+      <div class="control">
+        <input type="text" required="required" maxlength="28" placeholder="Digite Sua Cidade" id="input-cidade">
+      </div><br>
+
+      <!--ESTADO-->
+      <div class="field">
+        <div class="control">
+          <select class="select is-lower-alpha" required="required" name="state" id="select-state"></select>
+        </div>
+      </div>
+
+      <!--TIPO DE MORADIA-->
+      <div class="field">
+        <label class="label" for="casa">Tipo de Moradia</label>
+        <div class="control">
+          <label class="radio" for="casa">
+            <input name="moradia" type="radio" required="required" value="ca" id="casa">
+            Casa
+          </label>
+
+          <label class="radio" for="apartamento">
+            <input name="moradia" type="radio" required="required" value="ap" id="apartamento">
+            Apartamento
+          </label>
+        </div>
+      </div>
+
+      <!--RESUMO DO CURRÍCULO-->
+      <div class="field">
+        <label class="label" for="resumo">Resumo do Currículo:</label>
+        <div class="control">
+          <textarea name="resumo" required="required" id="resumo" maxlength="1000"
+            placeholder="Escreva sobre seu currículo!"></textarea>
+        </div>
+      </div>
+
+      <!--CARGO-->
+      <div class="field">
+        <label class="label" for="cargo">Cargo:</label>
+        <div class="control">
+          <input type="text" required="required" maxlength="40" id="cargo" placeholder="Digite seu Cargo">
+        </div>
+      </div>
+
+      <!--DESCRIÇÃO DO CARGO-->
+      <div class="field">
+        <label class="label" for="descricao-cargo">Descrição do Cargo</label>
+        <div class="control">
+          <input type="text" required="required" maxlength="500" id="descricao-cargo"
+            placeholder="Descreva sobre seu cargo!">
+        </div>
+      </div>
+      <!--DATA-->
+      <div class="field">
+        <label for="data">Data de início</label>
+        <div class="control"> 
+          <input type="text" required="required">
+        </div>
+      </div>
+
+      <!--BOTÃO DE ENVIAR-->
+      <div class="field">
+        <div class="control">
+          <button class="button is-success" type="submit">Enviar Formulário!</button>
+        </div>
+      </div>  
+  <script src="script.js"></script>
+</body>
+
+</html>
