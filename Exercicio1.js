@@ -1,17 +1,14 @@
-//Exercicio 1//
-    
-const assert = require('assert');
+//Exercicio 1 //
 
-const arrays = [
-    ["1", "2", "3"],
-    [true],
-    [4, 5, 6]
-];
+const assert = require('assert')
 
+const rectangleArea = (width, height) => width * height
 
-function flatten() {
-  return arrays.reduce((acumulator, array) => concat.arraus
-  )
+const rectangle1 = [1, 2]
+const rectangle2 = [3, 5]
+const rectangle3 = [6, 9]
+const rectangles = [rectangle1, rectangle2, rectangle3]
+
+for(rectangle of rectangles) {
+    assert.equal(rectangleArea(...retangle), rectangle[0]*rectangle[1]) // altere a chamada da funcao rectangleArea
 }
-
-assert.deepEqual(flatten(), ["1", "2", "3", true, 4, 5, 6]);
